@@ -91,7 +91,6 @@
     1px 0 var(--label-text__stroke_color),
     0 -1px var(--label-text__stroke_color);
   opacity: 0.5;
-  positio .card__img-backgroundn: relative;
 }
 
 @supports (text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff) {
