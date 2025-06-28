@@ -16,7 +16,7 @@
   inline-size: 700px;
   margin: 0 auto;
   font-family: var(--font-main);
-  font-variation-settings: 'wght' var(--font-weight-text);
+  font-variation-settings: "wght" var(--font-weight-text);
   background-image: var(--grid-bg-image);
   background-size: cover;
   background-attachment: fixed;
@@ -58,7 +58,7 @@
 .card__title {
   padding: 4px 10px;
   font-size: 18px;
-  font-variation-settings: 'wght' var(--font-weight-title);
+  font-variation-settings: "wght" var(--font-weight-title);
 }
 
 .card__img {
@@ -85,10 +85,8 @@
   font-family: var(--font-accent);
   font-size: 14px;
   padding: var(--card__content_padding);
-  text-shadow:
-    -1px 0 var(--label-text__stroke_color), 
-    0 1px var(--label-text__stroke_color),
-    1px 0 var(--label-text__stroke_color),
+  text-shadow: -1px 0 var(--label-text__stroke_color),
+    0 1px var(--label-text__stroke_color), 1px 0 var(--label-text__stroke_color),
     0 -1px var(--label-text__stroke_color);
   opacity: 0.5;
 }
@@ -122,7 +120,7 @@
 }
 
 .hue-shift {
-  filter: hue-rotate(90deg);
+  animation: disco 1s linear infinite;
 }
 
 .sepia {
@@ -131,6 +129,11 @@
 
 .inverted {
   filter: invert(100%);
+}
+
+.glow {
+  text-shadow: 0 0 5px var(--color-accent), 0 0 15px var(--color-accent),
+    0 0 30px var(--color-accent), 0 0 60px var(--color-accent);
 }
 
 .card__content {
@@ -143,7 +146,8 @@
 }
 
 .card__footer {
-  padding: 0 var(--card__content_padding) var(--card__content_padding) var(--card__content_padding);
+  padding: 0 var(--card__content_padding) var(--card__content_padding)
+    var(--card__content_padding);
   display: flex;
   justify-content: flex-end;
   gap: 6px;
@@ -269,6 +273,10 @@
   gap: 8px;
 }
 
+.save-button svg {
+  height: 26px;
+}
+
 .button svg {
   color: #fff;
   mix-blend-mode: difference;
@@ -284,7 +292,7 @@
 }
 
 .save-dialog::backdrop {
-  background-color: rgba(0,0,0,.75);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .save-dialog__title {
@@ -325,5 +333,10 @@
 
   .save-button {
     margin: 50px auto 100px auto;
+    flex-direction: column;
+  }
+
+  .save-button svg {
+    height: 35px;
   }
 }
