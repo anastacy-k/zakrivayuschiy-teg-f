@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: var(--text-regular);
+}
+
 body {
   margin: 0;
 }
