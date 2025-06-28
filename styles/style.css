@@ -91,7 +91,7 @@
     1px 0 var(--label-text__stroke_color),
     0 -1px var(--label-text__stroke_color);
   opacity: 0.5;
-  position: relative;
+  positio .card__img-backgroundn: relative;
 }
 
 @supports (text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff) {
@@ -102,35 +102,35 @@
   }
 }
 
-.bright .card__img-background {
+.bright {
   filter: brightness(1.5);
 }
 
-.contrast .card__img-background {
+.contrast {
   filter: contrast(150%);
 }
 
-.blurred .card__img-background {
-  filter: blur(3px);
+.blurred {
+  filter: blur(10px);
 }
 
-.grayscale .card__img-background {
+.grayscale {
   filter: grayscale(100%);
 }
 
-.saturated .card__img-background {
+.saturated {
   filter: saturate(200%);
 }
 
-.hue-shift .card__img-background {
+.hue-shift {
   filter: hue-rotate(90deg);
 }
 
-.sepia .card__img-background {
+.sepia {
   filter: sepia(80%);
 }
 
-.inverted .card__img-background {
+.inverted {
   filter: invert(100%);
 }
 
