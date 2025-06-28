@@ -64,15 +64,21 @@
 .card__img {
   max-inline-size: 100%;
   max-block-size: 696px;
-  /* padding-bottom: 100%; */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
+  padding-bottom: 100%;
   display: flex;
   justify-content: flex-end;
   border-block-start: 2px solid var(--color-accent);
   border-block-end: 2px solid var(--color-accent);
-  background-blend-mode: overlay;
+  overflow: hidden;
+}
+
+.card__img-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card__img-title {
@@ -85,8 +91,7 @@
     1px 0 var(--label-text__stroke_color),
     0 -1px var(--label-text__stroke_color);
   opacity: 0.5;
-  /* mix-blend-mode: hard-light; */
-  isolation: isolate;
+  position: relative;
 }
 
 @supports (text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff) {
@@ -97,35 +102,35 @@
   }
 }
 
-.bright {
+.bright .card__img-background {
   filter: brightness(1.5);
 }
 
-.contrast {
+.contrast .card__img-background {
   filter: contrast(150%);
 }
 
-.blurred {
+.blurred .card__img-background {
   filter: blur(3px);
 }
 
-.grayscale {
+.grayscale .card__img-background {
   filter: grayscale(100%);
 }
 
-.saturated {
+.saturated .card__img-background {
   filter: saturate(200%);
 }
 
-.hue-shift {
+.hue-shift .card__img-background {
   filter: hue-rotate(90deg);
 }
 
-.sepia {
+.sepia .card__img-background {
   filter: sepia(80%);
 }
 
-.inverted {
+.inverted .card__img-background {
   filter: invert(100%);
 }
 
@@ -307,12 +312,12 @@
   }
 
   .card__img-title {
-    padding-inline-end: 14px;
+    font-size: 12px;
   }
 
   .save-dialog {
-    padding: 30px 42px;
-    inline-size: 340px;
+    inline-size: 341px;
+    padding: 20px;
   }
 
   .save-dialog__group-with-filter {
@@ -320,6 +325,6 @@
   }
 
   .save-button {
-    flex-direction: column;
+    margin: 50px auto 100px auto;
   }
 }
