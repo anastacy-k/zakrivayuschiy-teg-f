@@ -224,11 +224,6 @@
   opacity: 0;
 }
 
-.like-icon.is-liked .core {
-  fill: initial;
-  transition: fill 0.1s linear;
-}
-
 .icon-button:hover .core {
   fill: var(--color-accent);
 }
@@ -246,6 +241,7 @@
 }
 
 .like-icon.is-liked .core {
+  transition: fill 0.1s linear;
   fill: var(--animation-fill-color);
 }
 
