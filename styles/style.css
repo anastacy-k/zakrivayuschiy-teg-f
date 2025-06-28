@@ -124,7 +124,7 @@
 }
 
 .sepia {
-  filter: sepia(80%);
+  filter: sepia(80%) contrast(120%) brightness(1.1);
 }
 
 .inverted {
