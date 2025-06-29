@@ -3,7 +3,7 @@
 :root {
   /* Fonts: */
   --font-main: "Inter-Variable", Arial, sans-serif;
-  --font-accent: "PressStart2P-Regular", fantasy;
+  --font-accent: "PressStart2P", fantasy;
   --font-weight-text: 400;
   --font-weight-title: 700;
 
@@ -18,14 +18,15 @@
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
 
   /* Card: */
-  --card__content_font-size: 18px;
-  --card__content_padding: 25px;
-  --label-text__stroke_color: #fff;
+  --card-font-size: 18px;
+  --card-padding: 25px;
+  --text-stroke-color: #fff;
 
   /* Colors: */
   --color-accent: #000;
   --contour-color: #000;
+  --animation-fill-color: red;
+  
   --core-color: red;
   --sparks-color: red;
-  --animation-fill-color: red;
 }
